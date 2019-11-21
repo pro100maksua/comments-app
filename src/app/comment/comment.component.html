@@ -5,7 +5,7 @@
       class="fas fa-comment action-icon"
       (click)="this.showCommentInput = !this.showCommentInput"
     ></i>
-    <i class="fas fa-times action-icon" (click)="removeComment(comment.id)"></i>
+    <i class="fas fa-times action-icon" (click)="removeComment()"></i>
   </div>
 </div>
 <div *ngIf="showCommentInput" class="comment-input">
