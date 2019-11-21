@@ -1,0 +1,15 @@
+import { Component, Input } from "@angular/core";
+import { Comment } from "../models/comment";
+
+@Component({
+  selector: "app-comments",
+  templateUrl: "./comments.component.html",
+  styleUrls: ["./comments.component.scss"],
+})
+export class CommentsComponent {
+  @Input() comments: Comment[];
+
+  public onCommentRemoved(commentId: number) {
+    this.comments = this.comments.filter(c => c.id !== commentId);
+  }
+}

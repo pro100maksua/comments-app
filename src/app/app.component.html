@@ -1,0 +1,7 @@
+<div class="wrapper">
+  <div class="search">
+    <input [(ngModel)]="search" class="search-input" (keyup.enter)="searchComments()" />
+    <button class="search-submit" (click)="searchComments()">Search</button>
+  </div>
+  <app-comments [comments]="filteredComments"></app-comments>
+</div>

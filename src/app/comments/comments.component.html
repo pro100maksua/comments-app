@@ -1,0 +1,7 @@
+<div class="comments-container">
+  <app-comment
+    *ngFor="let comment of comments"
+    [comment]="comment"
+    (commentRemoved)="onCommentRemoved(comment.id)"
+  ></app-comment>
+</div>

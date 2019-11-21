@@ -1,0 +1,15 @@
+<div class="comment">
+  <div style="padding-bottom: 20px">{{ comment.text }}</div>
+  <div class="comment-actions">
+    <i
+      class="fas fa-comment action-icon"
+      (click)="this.showCommentInput = !this.showCommentInput"
+    ></i>
+    <i class="fas fa-times action-icon" (click)="removeComment(comment.id)"></i>
+  </div>
+</div>
+<div *ngIf="showCommentInput" class="comment-input">
+  <textarea [(ngModel)]="newComment" class="comment-text-area"></textarea>
+  <button class="submit-comment" (click)="submitComment()">Submit</button>
+</div>
+<app-comments [comments]="comment.comments" *ngIf="comment.comments"></app-comments>

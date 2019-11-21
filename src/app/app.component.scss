@@ -1,0 +1,32 @@
+.wrapper {
+  margin: 0 auto;
+  background: #f9f9f9;
+  max-width: 1000px;
+  padding: 10px 20px 10px 10px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+
+  .search-input {
+    flex: 1 1 auto;
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+  }
+
+  .search-submit {
+    border-radius: 5px;
+    border: none;
+    background: #b8484e;
+    color: #fff;
+    font-size: 16px;
+    height: 30px;
+  }
+}
